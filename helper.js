@@ -1,5 +1,8 @@
 shorten
 
-const shortenText = (text) => {
-  return text.substr(0, 50) + '...';
+const shortenText = (text, maxLength) > {
+  if(text && text.length > maxLength){
+    return text.substr(0, maxLength) + '...'
+  }
+  return text
 }
